@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>INST377 - Final Project - Flights Page</title>
+        <script src = "flightsPage-JS.js"></script>
+        <link rel = "stylesheet" href = "flightsPage-CSS.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+    <body>
+        <div id = "heading">
+            <a href = "homePage-HTML.html"><img src = "https://static.vecteezy.com/system/resources/previews/005/503/835/non_2x/clock-with-launch-airplane-logo-design-graphic-symbol-icon-sign-illustration-creative-idea-vector.jpg" width="100" height="100"></a>
+            <h1 id = "title"><em>Flights Page</em></h1>
+        </div>
+        <!-- Navigation Bar -->
+         <nav id = "nav-bar">
+            <ul>
+                <li><a href = "homePage-HTML.html">Home</a></li>
+                <li><a href = "aboutPage-HTML.html">About</a></li>
+                <li><a href = "flightsPage-HTML.html">Flights</a></li>
+            </ul>
+         </nav>
+
+        <!-- Instructions -->
+         <div id = "instructions">
+            <h2><strong>How to calculate your ideal arrival time:</strong></h2>
+            <ul>
+                <li>Enter your departure airport code, flight number, or both to receive a calculation.</li>
+                <li>Ensure that all flight information requested is correct.</li>
+            </ul>
+         </div>
+
+        <!-- Calculation Form -->
+         <form id = "calculationForm" onsubmit = "calculateArrival(); return false;">
+            <label for = "airport">Please input your airport code: </label>
+            <input type = "text" id = "airport">
+            <br>
+            <label for = "flightNum">Please input your flight number: </label>
+            <input type = "text" id = "flightNum">
+            <br>
+            <br>
+            <button type = "submit" id = "submitButton"><strong>Submit</strong></button>
+         </form>
+
+        <!-- Arrival Time Information -->
+         <div id = "arrivalInfo"></div>
+         <br>
+
+        <!-- Chart -->
+         <canvas id="flightChart"></canvas>
+    </body>
+</html>
