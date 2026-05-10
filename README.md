@@ -1,5 +1,5 @@
 # inst377-final-project
-This is the final project for INST377. The website is called GateWise and helps users have a better understanding of when they should arrive at the airport based on how many other flights are flying out around their departure time.
+This is the final project for INST377. The website is called GateWise and helps users have a better understanding of when they should arrive at the airport based on how many other flights are flying out around their departure time. The target browsers of this project are iOS and Android. The project was created on a Windows laptop.
 
 ## How to install project and all dependencies:
 Use 'npm install' to install nodemon, express, dotenv, body-parser, and @supabase/supabase-js
@@ -17,6 +17,7 @@ There are no tests that were written for the software. If something is inputted 
 ## APIs for the project:
 - **AviationStack API:** Provides real-time information about the status of flights around the world. This API is used in the 'Flights' tab of the application to calculate the ideal arrival time at the airport.
 - **Pexels API:** Contains various pictures, specifically of airplanes for this application. This API is used in the 'Home' tab of the application to provide the automatic slider of random pictures of planes to help the aesthetics of the application.
+- **GET and POST to 'users':** Gets information from the data table created in supabase and posts new entries to the table in supabase.
 
 ## Expectations around known bugs and a road-map for future development:
 There are currently no known bugs of the application. One feature that could be implemented in the future are to make the calculations of ideal arrival time to be more customizable. Another feature that could be incorporated into future development is to include every single flight across the world, not just the ones that are in the AviationStack API.
