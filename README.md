@@ -2,7 +2,7 @@
 This is the final project for INST377. The website is called GateWise and helps users have a better understanding of when they should arrive at the airport based on how many other flights are flying out around their departure time.
 
 ## How to install project and all dependencies:
-Use 'npm install' to install nodemon, express, dotenv, and @supabase/supabase-js
+Use 'npm install' to install nodemon, express, dotenv, body-parser, and @supabase/supabase-js
 
 ## How to run application on a server:
 The easiest way to run this application on a server is to run it through VS code on the live server. Once you have VS code open and are on the homePage-HTML.html file, you can hit the "Go Live" button and that will run the application.
