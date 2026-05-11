@@ -1,6 +1,6 @@
 async function calculateArrival() {
-    const flightNumber = document.getElementById("flightNum").value;
-    const airportCode = document.getElementById("airport").value;
+    const flightNumber = document.getElementById("flightNumber").value;
+    const airportCode = document.getElementById("airportCode").value;
 
     let flightData = null;
     let departureTime = null;
@@ -157,7 +157,7 @@ function renderChart(nearbyFlights, totalFlights) {
 }
 
 async function createUser() {
-    await fetch('/users', {
+    await fetch('http://localhost:3000/users', {
         method: "POST",
         body: JSON.stringify({
             firstName: `${document.getElementById('firstName').value}`,
@@ -173,7 +173,7 @@ async function createUser() {
 }
 
 async function loadUserData() {
-    await fetch('/users')
+    await fetch('http://localhost:3000/users')
         .then((result) => result.json())
         .then((resultJson) => {
             console.log(resultJson);

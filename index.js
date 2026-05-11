@@ -4,11 +4,13 @@ const express = require('express');
 const { createClient } = require("@supabase/supabase-js");
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 app.use((req, res, next) => {
