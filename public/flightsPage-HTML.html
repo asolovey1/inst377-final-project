@@ -31,12 +31,18 @@
          </div>
 
         <!-- Calculation Form -->
-         <form id = "calculationForm" onsubmit = "calculateArrival(); return false;">
-            <label for = "airport">Please input your airport code: </label>
-            <input type = "text" id = "airport">
+         <form id = "calculationForm" onsubmit = "calculateArrival(); createUser(); return false;">
+            <label for = "firstName">First Name: </label>
+            <input type = "text" id = "firstName">
             <br>
-            <label for = "flightNum">Please input your flight number: </label>
-            <input type = "text" id = "flightNum">
+            <label for = "lastName">Last  Name: </label>
+            <input type = "text" id = "lastName">
+            <br>
+            <label for = "flightNumber">Please input your flight number: </label>
+            <input type = "text" id = "flightNumber">
+            <br>
+            <label for = "airportCode">Please input your airport code: </label>
+            <input type = "text" id = "airportCode">
             <br>
             <br>
             <button type = "submit" id = "submitButton"><strong>Submit</strong></button>
