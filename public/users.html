@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Our Users!</title>
+        <script src = "users.js"></script>
+        <link rel = "stylesheet" href = "users.CSS">
+    </head>
+
+    <body>
+        <div id = "heading">
+            <a href = "homePage-HTML.html"><img src = "https://static.vecteezy.com/system/resources/previews/005/503/835/non_2x/clock-with-launch-airplane-logo-design-graphic-symbol-icon-sign-illustration-creative-idea-vector.jpg" width="100" height="100"></a>
+            <h1 id = "title"><em>Users Page</em></h1>
+        </div>
+        <!-- Navigation Bar -->
+         <nav id = "nav-bar">
+            <ul>
+                <li><a href = "homePage-HTML.html">Home</a></li>
+                <li><a href = "aboutPage-HTML.html">About</a></li>
+                <li><a href = "flightsPage-HTML.html">Flights</a></li>
+                <li><a href = "users.html">Users</a></li>
+            </ul>
+         </nav>
+
+        <form onsubmit = "createUser(); return false;">
+            <label for = "firstName">First Name: </label>
+            <input type = "text" id = "firstName">
+            <br>
+            <label for = "lastName">Last  Name: </label>
+            <input type = "text" id = "lastName">
+            <br>
+            <label for = "flightNumber">Flight Number: </label>
+            <input type = "text" id = "flightNumber">
+            <br>
+            <label for = "airportCode">Airport Code: </label>
+            <input type = "text" id = "airportCode">
+            <br>
+            <br>
+            <input type = "submit" name = "Add User">
+        </form>
+    </body>
+</html>

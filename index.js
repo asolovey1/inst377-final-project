@@ -23,6 +23,10 @@ const supabase = createClient(
     process.env.SUPABASE_KEY
 );
 
+app.get('/', (req, res) => {
+    res.sendFile('public/users.html', { root: __dirname });
+})
+
 app.get('/users', async (req, res) => {
     console.log('Attempting to get all users!')
 
