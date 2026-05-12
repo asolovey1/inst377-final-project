@@ -26,7 +26,7 @@ const supabase = createClient(
 );
 
 app.get('/', (req, res) => {
-    res.sendFile('public/users.html', { root: __dirname });
+    res.sendFile('public/flightPage-HTML.html', { root: __dirname });
 })
 
 app.get('/users', async (req, res) => {
