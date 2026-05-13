@@ -157,7 +157,7 @@ function renderChart(nearbyFlights, totalFlights) {
 }
 
 async function createUser() {
-    await fetch('http://localhost:3000/users', {
+    await fetch('https://inst377-final-project-gamma.vercel.app/users', {
         method: "POST",
         body: JSON.stringify({
             firstName: `${document.getElementById('firstName').value}`,
@@ -173,7 +173,7 @@ async function createUser() {
 }
 
 async function loadUserData() {
-    await fetch('http://localhost:3000/users')
+    await fetch('https://inst377-final-project-gamma.vercel.app/users')
         .then((result) => result.json())
         .then((resultJson) => {
             console.log(resultJson);
